@@ -62,6 +62,6 @@
 
 @layer utilities {
 	.link {
-		@apply cursor-pointer text-[.8125rem];
+		@apply cursor-pointer text-[.8125rem] hover:text-burnt-orange;
 	}
 }

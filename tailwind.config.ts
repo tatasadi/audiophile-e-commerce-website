@@ -10,6 +10,9 @@ const config = {
 	],
 	prefix: '',
 	theme: {
+		fontFamily: {
+			man: ['Manrope'],
+		},
 		container: {
 			center: true,
 			padding: '2rem',
