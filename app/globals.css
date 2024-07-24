@@ -59,3 +59,9 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+@layer utilities {
+	.link {
+		@apply cursor-pointer text-[.8125rem];
+	}
+}

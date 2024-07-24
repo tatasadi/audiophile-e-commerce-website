@@ -52,43 +52,60 @@ const config = {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))',
 				},
-				'royal-violet': '#633CFF',
-				'lavender-dream': '#BEADFF',
-				'soft-lilac': '#EFEBFF',
+				'burnt-orange': '#D87D4A',
+				charcoal: '#101010',
+				'very-light-gray': '#F1F1F1',
 				'charcoal-black': '#333333',
-				'stone-gray': '#737373',
-				'dark-gray': '#D9D9D9',
-				'dark-red': '#FF3939',
 				'pure-snow': '#FAFAFA',
-				'crimson-blaze': '#FF3939',
-				'pure-gray': '#333',
+				apricot: '#fbaf85',
 			},
 			fontSize: {
-				'heading-m': [
-					'32px',
+				h1: [
+					'56px',
 					{
-						lineHeight: '24px',
+						lineHeight: '56px',
 						fontWeight: 'bold',
 					},
 				],
-				'heading-s': [
-					'16px',
+				h2: [
+					'40px',
+					{
+						lineHeight: '44px',
+						fontWeight: 'bold',
+					},
+				],
+				h3: [
+					'32px',
+					{
+						lineHeight: '36px',
+						fontWeight: 'bold',
+					},
+				],
+				h4: [
+					'28px',
+					{
+						lineHeight: '38px',
+						fontWeight: 'bold',
+					},
+				],
+				h5: [
+					'24px',
+					{
+						lineHeight: '33px',
+						fontWeight: 'bold',
+					},
+				],
+				h6: [
+					'18px',
 					{
 						lineHeight: '24px',
 						fontWeight: 'bold',
 					},
 				],
 				'body-m': [
-					'16px',
+					'15px',
 					{
-						lineHeight: '24px',
-						fontWeight: '500',
-					},
-				],
-				'body-s': [
-					'12px',
-					{
-						lineHeight: '24px',
+						lineHeight: '25px',
 						fontWeight: '500',
 					},
 				],
