@@ -1,14 +1,14 @@
-import Header from '@/components/sections/header'
+import Hero from '@/components/sections/hero'
 import type { Meta, StoryObj } from '@storybook/react'
 
 const meta = {
-	title: 'Components/Header',
-	component: Header,
+	title: 'Components/Hero',
+	component: Hero,
 	parameters: {
 		layout: 'centered',
 	},
 	tags: ['autodocs'],
-} satisfies Meta<typeof Header>
+} satisfies Meta<typeof Hero>
 
 export default meta
 type Story = StoryObj<typeof meta>

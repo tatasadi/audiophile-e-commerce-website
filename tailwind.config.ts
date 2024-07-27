@@ -61,6 +61,7 @@ const config = {
 				'charcoal-black': '#333333',
 				'pure-snow': '#FAFAFA',
 				apricot: '#fbaf85',
+				'dark-gray': '#4C4C4C',
 			},
 			fontSize: {
 				h1: [
