@@ -63,6 +63,7 @@ const config = {
 				apricot: '#fbaf85',
 				'dark-gray': '#4C4C4C',
 				ice: '#FFF',
+				dark: '#141414',
 			},
 			fontSize: {
 				h1: [

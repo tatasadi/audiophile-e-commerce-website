@@ -4,7 +4,7 @@ import { useState } from 'react'
 export default function Header() {
 	const [mobileOpen, setMobileOpen] = useState(false)
 	return (
-		<header className="relative flex w-full items-center bg-[#141414] p-8">
+		<header className="relative flex w-full items-center bg-dark p-8">
 			{mobileOpen && (
 				<div className="fixed inset-0 z-10 bg-black opacity-50 lg:hidden"></div>
 			)}
@@ -29,7 +29,7 @@ export default function Header() {
 					/>
 				)}
 			</div>
-			<div className="mr-auto">
+			<div className="mr-auto z-30">
 				<img
 					src="/audiophile.svg"
 					alt="logo"
@@ -64,7 +64,7 @@ export default function Header() {
 					</li>
 				</ul>
 			</nav>
-			<div className="md:ml-auto md:mr-1">
+			<div className="md:ml-auto md:mr-1 z-30">
 				<img
 					src="/shape.svg"
 					alt="logo"
