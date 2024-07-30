@@ -62,6 +62,7 @@ const config = {
 				'pure-snow': '#FAFAFA',
 				apricot: '#fbaf85',
 				'dark-gray': '#4C4C4C',
+				ice: '#FFF',
 			},
 			fontSize: {
 				h1: [
