@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 export default function Hero() {
 	return (
-		<div className="relative w-full min-h-screen flex flex-col justify-center items-center lg:items-start gap-12 text-white">
+		<div className="relative w-full min-h-screen flex flex-col justify-center items-center lg:items-start gap-12 text-white bg-dark">
 			<picture className="absolute w-full">
 				<source
 					media="(min-width: 1024px)"

@@ -5,7 +5,7 @@ import AudioDeviceControl from '@/components/sections/audioDeviceControl'
 import Product from '@/components/sections/product'
 export default function Home() {
 	return (
-		<main className="max-w-[90rem] mx-auto bg-dark">
+		<main className="max-w-[90rem] mx-auto">
 			<Header />
 			<Hero />
 			<AudioDeviceControl />
