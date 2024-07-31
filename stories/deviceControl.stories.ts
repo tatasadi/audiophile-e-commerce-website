@@ -13,6 +13,21 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {
-	args: {},
+export const HEADPHONES: Story = {
+	args: {
+		text: 'HEADPHONES',
+		icon: '/cart/image12.png',
+	},
+}
+export const SPEAKERS: Story = {
+	args: {
+		text: 'SPEAKERS',
+		icon: '/cart/image13.png',
+	},
+}
+export const EARPHONES: Story = {
+	args: {
+		text: 'EARPHONES',
+		icon: '/cart/image14.png',
+	},
 }

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const man = Manrope({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
 	title: 'Link Sharing App',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${inter.className} bg-pure-snow`}>
+			<body className={`${man.className} bg-pure-snow`}>
 				{children}
 			</body>
 		</html>

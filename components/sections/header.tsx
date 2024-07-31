@@ -37,14 +37,14 @@ export default function Header() {
 				/>
 			</div>
 			<nav
-				className={`fixed left-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white lg:bg-[#141414] lg:text-white lg:relative lg:pt-0 lg:w-auto lg:mr-20 text-gray ${
+				className={`fixed left-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white lg:bg-dark lg:text-white lg:relative lg:pt-0 lg:w-auto lg:mr-20 text-gray ${
 					mobileOpen ? 'block' : 'hidden lg:block'
 				}`}
 			>
-				<ul className="flex flex-col gap-6 md:flex-row text-lg leading-6 md:gap-10">
+				<ul className="flex flex-col items-center gap-6 lg:flex-row text-lg leading-6 md:gap-10">
 					<li>
 						<a className="link" href="#">
-							Home
+							HOME
 						</a>
 					</li>
 					<li>

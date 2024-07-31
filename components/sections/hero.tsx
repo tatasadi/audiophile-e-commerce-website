@@ -2,22 +2,24 @@ import { Button } from '../ui/button'
 
 export default function Hero() {
 	return (
-		<div className="relative w-full min-h-screen flex flex-col justify-center items-center lg:items-start gap-12 text-white bg-dark">
-			<picture className="absolute w-full">
-				<source
-					media="(min-width: 1024px)"
-					srcSet="/home/desktop/image-hero.jpg"
-				/>
-				<source
-					media="(min-width: 768px)"
-					srcSet="/home/tablet/image-header.jpg"
-				/>
-				<source
-					media="(max-width: 767px)"
-					srcSet="/home/mobile/image-header.jpg"
-				/>
-				<img src="/home/mobile/image-header.jpg" alt="Responsive" />
-			</picture>
+		<div className="relative w-full flex flex-col justify-center items-center lg:items-start gap-12 text-white bg-dark pt-[5rem] pb-[4rem] md:pt-[8rem] md:pb-[5rem] lg:pt-[5rem]">
+			<div className="absolute z-0">
+				<picture>
+					<source
+						media="(min-width: 1024px)"
+						srcSet="/home/desktop/image-hero.jpg"
+					/>
+					<source
+						media="(min-width: 768px)"
+						srcSet="/home/tablet/image-header.jpg"
+					/>
+					<source
+						media="(max-width: 767px)"
+						srcSet="/home/mobile/image-header.jpg"
+					/>
+					<img src="/home/mobile/image-header.jpg" alt="Responsive" />
+				</picture>
+			</div>
 			<div className="z-10 flex flex-col gap-8 lg:pl-[5rem] justify-center lg:justify-start items-center lg:items-start">
 				<p className="opacity-[0.4964] uppercase mt-[8.5rem] sm:mt-[5rem] md:mt-4 lg:mt-24 tracking-[0.625rem]">
 					NEW PRODUCT
