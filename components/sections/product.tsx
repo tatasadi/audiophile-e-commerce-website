@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 export default function Product() {
 	return (
-		<section className="relative bg-burnt-orange text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-40 my-4 py-[5rem] lg:pb-0 overflow-hidden">
+		<section className="relative bg-burnt-orange text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-40 my-4 py-[5rem] lg:pb-0 overflow-hidden rounded-lg">
 			<div className="absolute top-5 md:top-[-5.2rem] lg:top-[8rem] lg:left-[9rem] w-[17.4375rem] md:w-[29.5rem] h-[17.4375rem] md:h-[29.5rem] rounded-full border-[1px] border-ice opacity-50"></div>
 			<div className="absolute top-0 md:top-[-7.2rem] lg:top-[6rem] lg:left-[7rem] w-80 md:w-[33.875rem] h-80 md:h-[33.875rem] rounded-full border-[1px] border-ice opacity-50"></div>
 			<div className="absolute top-[-8.5rem] sm:top-[-18rem] md:top-[-21.2rem] lg:top-[-7rem] lg:left-[-5.5rem] w-[34.875rem] h-[34.875rem] sm:w-[47rem] sm:h-[47rem] md:w-[59rem] md:h-[59rem] rounded-full border-[1px] border-ice opacity-50"></div>

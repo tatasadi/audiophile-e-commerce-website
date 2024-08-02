@@ -41,7 +41,7 @@ export default function Header() {
 					mobileOpen ? 'block' : 'hidden lg:block'
 				}`}
 			>
-				<ul className="flex flex-col items-center gap-6 lg:flex-row text-lg leading-6 md:gap-10">
+				<ul className="flex flex-col items-center gap-6 lg:flex-row leading-6 md:gap-10">
 					<li>
 						<a className="link" href="#">
 							HOME
