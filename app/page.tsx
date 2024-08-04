@@ -5,6 +5,7 @@ import AudioDeviceControl from '@/components/sections/audioDeviceControl'
 import Product from '@/components/sections/product'
 import ItemProduct from '@/components/sections/itemProduct'
 import SleekProduct from '@/components/sections/sleekProduct'
+import About from '@/components/sections/about'
 export default function Home() {
 	return (
 		<main className="max-w-[90rem] mx-auto p-6">
@@ -14,6 +15,7 @@ export default function Home() {
 			<Product />
 			<ItemProduct />
 			<SleekProduct />
+			<About />
 		</main>
 	)
 }
