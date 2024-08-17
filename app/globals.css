@@ -64,4 +64,10 @@
 	.link {
 		@apply cursor-pointer text-lg lg:text-[0.8125rem] hover:text-burnt-orange;
 	}
+	.a-link {
+		@apply p-2 cursor-pointer hover:text-burnt-orange;
+	}
+	.link2 {
+		@apply cursor-pointer text-[0.8125rem] hover:text-burnt-orange;
+	}
 }

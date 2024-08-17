@@ -4,7 +4,7 @@ export default function About() {
 	return (
 		<div className=" grid grid-cols-1 lg:grid-cols-2 p-2 gap-6">
 			<div className="lg:col-start-2">
-				<picture className="">
+				<picture>
 					<source
 						media="(min-width: 1024px)"
 						srcSet="/shared/desktop/image-best-gear.jpg"
@@ -20,6 +20,7 @@ export default function About() {
 					<img
 						src="/shared/mobile/image-best-gear.jpg"
 						alt="earphones"
+						className="rounded-lg"
 					/>
 				</picture>
 			</div>

@@ -5,7 +5,7 @@ import './globals.css'
 const man = Manrope({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
-	title: 'Link Sharing App',
+	title: 'Audiophile-e-commerce-website',
 	description: 'A Frontend Mentor challenge',
 }
 
