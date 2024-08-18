@@ -6,17 +6,17 @@ export default function AudioDeviceControl() {
 			<DeviceControl
 				text="HEADPHONES"
 				icon="/cart/image12.png"
-				className="w-[4.99475rem]"
+				imageClassName="w-[4.99475rem]"
 			/>
 			<DeviceControl
 				text="SPEAKERS"
 				icon="/cart/image13.png"
-				className="w-[5.25275rem]"
+				imageClassName="w-[5.25275rem]"
 			/>
 			<DeviceControl
 				text="EARPHONES"
 				icon="/cart/image15.png"
-				className="w-[5.85rem]"
+				imageClassName="w-[5.85rem]"
 			/>
 		</div>
 	)

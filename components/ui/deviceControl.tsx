@@ -1,8 +1,12 @@
-export default function DeviceControl({ icon, text, className }) {
+export default function DeviceControl({
+	icon,
+	text,
+	imageClassName,
+}) {
 	return (
 		<div className="relative p-4 pt-14">
 			<div className="absolute w-full top-0 right-0 flex justify-center items-center">
-				<img src={icon} className={className} />
+				<img src={icon} className={imageClassName} />
 			</div>
 			<div className="bg-very-light-gray flex flex-col gap-3 justify-center items-center p-10 rounded-lg">
 				<p className="text-h6 tracking-[0.08rem] mb-2 uppercase mt-6">
