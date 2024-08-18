@@ -8,7 +8,6 @@ import SleekProduct from '@/components/sections/sleekProduct'
 import About from '@/components/sections/about'
 import Footer from '@/components/sections/footer'
 import Headphones from '@/components/sections/headphones'
-import HeadphonesHero from '@/components/ui/headphonesHero'
 import Speakers from '@/components/sections/speakers'
 import Earphones from '@/components/sections/earphones'
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
 			<About />
 			<Footer />
 			<Headphones />
-			<HeadphonesHero />
 			<Speakers />
 			<Earphones />
 		</main>
