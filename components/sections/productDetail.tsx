@@ -18,7 +18,14 @@ export default function ProductDetail({
 					{text}
 				</p>
 				<p className="text-h6 my-5">{price}</p>
-				<Button>ADD TO CART</Button>
+				<div className="flex justify-center items-center gap-5">
+					<div className="flex gap-5 justify-center items-center bg-very-light-gray py-3 px-5">
+						<button className="opacity-25 w-4">-</button>
+						<p>1</p>
+						<button className="opacity-25 w-4">+</button>
+					</div>
+					<Button>ADD TO CART</Button>
+				</div>
 			</div>
 			<div>
 				<h3 className="text-h5">FEATURES</h3>
