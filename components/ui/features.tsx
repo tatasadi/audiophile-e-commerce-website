@@ -1,9 +1,15 @@
 export default function Features({ text, text2 }) {
 	return (
 		<div className="">
-			<h2>FEATURES</h2>
-			<p className="">{text}</p>
-			<p className="">{text2}</p>
+			<h2 className="uppercase text-h5 mb-8 tracking-[0.05356rem]">
+				FEATURES
+			</h2>
+			<p className="text-[0.9375rem] leading-[1.5625rem]  my-6 opacity-50">
+				{text}
+			</p>
+			<p className="text-[0.9375rem] leading-[1.5625rem]  my-6 opacity-50">
+				{text2}
+			</p>
 		</div>
 	)
 }

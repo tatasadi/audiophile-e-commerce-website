@@ -11,6 +11,7 @@ import Headphones from '@/components/sections/headphones'
 import Speakers from '@/components/sections/speakers'
 import Earphones from '@/components/sections/earphones'
 import InTheBoxX99II from '@/components/sections/inTheBoxX99II'
+import FeaturesX99II from '@/components/sections/featuresX99II'
 export default function Home() {
 	return (
 		<main className="max-w-[90rem] mx-auto p-6">
@@ -26,6 +27,7 @@ export default function Home() {
 			<Speakers />
 			<Earphones />
 			<InTheBoxX99II />
+			<FeaturesX99II />
 		</main>
 	)
 }
