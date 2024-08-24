@@ -10,7 +10,7 @@ export default function Headphones() {
 				isNewProduct={true}
 			/>
 			<AudioItem
-				icon="/cart/image12.png"
+				icon="/cart/image21.png"
 				title="XX99 Mark I Headphones"
 				text="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
 				className="lg:flex-row-reverse"
