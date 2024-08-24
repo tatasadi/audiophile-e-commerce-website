@@ -12,7 +12,7 @@ import Speakers from '@/components/sections/speakers'
 import Earphones from '@/components/sections/earphones'
 import InTheBoxX99II from '@/components/sections/inTheBoxX99II'
 import FeaturesX99II from '@/components/sections/featuresX99II'
-import ImagesX99II from '@/components/sections/imagesX99II'
+import ImagesYx1 from '@/components/sections/imagesYx1'
 export default function Home() {
 	return (
 		<main className="max-w-[90rem] mx-auto p-6">
@@ -29,7 +29,7 @@ export default function Home() {
 			<Earphones />
 			<InTheBoxX99II />
 			<FeaturesX99II />
-			<ImagesX99II />
+			<ImagesYx1 />
 		</main>
 	)
 }
