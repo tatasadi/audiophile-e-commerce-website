@@ -13,6 +13,7 @@ import Earphones from '@/components/sections/earphones'
 import InTheBoxX99II from '@/components/sections/inTheBoxX99II'
 import FeaturesX99II from '@/components/sections/featuresX99II'
 import ImagesYx1 from '@/components/sections/imagesYx1'
+import Cart from '@/components/ui/cart'
 export default function Home() {
 	return (
 		<main className="max-w-[90rem] mx-auto p-6">
@@ -30,6 +31,7 @@ export default function Home() {
 			<InTheBoxX99II />
 			<FeaturesX99II />
 			<ImagesYx1 />
+			<Cart />
 		</main>
 	)
 }

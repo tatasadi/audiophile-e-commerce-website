@@ -70,4 +70,51 @@
 	.link2 {
 		@apply cursor-pointer text-[0.8125rem] hover:text-burnt-orange;
 	}
+
+	.cart-items {
+		margin-bottom: 16px;
+	}
+	.cart-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 16px;
+	}
+
+	.cart-item img {
+		width: 50px;
+		height: 50px;
+		border-radius: 8px;
+		margin-right: 8px;
+	}
+	.item-details {
+		flex: 1;
+	}
+
+	.item-quantity {
+		display: flex;
+		align-items: center;
+	}
+	.item-quantity button {
+		background: none;
+		border: 1px solid gray;
+		padding: 4px 8px;
+		cursor: pointer;
+	}
+
+	.cart-total {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 16px;
+	}
+	.checkout-button {
+		width: 100%;
+		padding: 12px;
+		background-color: orange;
+		color: white;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+		font-weight: bold;
+	}
 }
