@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import { Button } from '../ui/button'
 
 export default function Checkout() {
 	const [billingDetails, setBillingDetails] = useState({
@@ -47,24 +48,25 @@ export default function Checkout() {
 		e.preventDefault()
 	}
 	return (
-		<div className="checkout-page">
-			<form className="checkout-form" onSubmit={handleSubmit}>
-				<h2>CHECKOUT</h2>
+		<div className="lg:flex lg:justify-between p-5">
+			<form className="flex flex-col" onSubmit={handleSubmit}>
+				<h2 className="text-h4 tracking-[0.0625rem] my-6">
+					CHECKOUT
+				</h2>
 				<section className="billing-details">
-					<h3>Billing Details</h3>
-					<label>
-						Name
-						<input
-							type="text"
-							name="name"
-							placeholder="Alexei Ward"
-							value={billingDetails.name}
-							onChange={handleInputChange}
-							required
-						/>
-					</label>
+					<h3 className="link4">Billing Details</h3>
+					<label className="link3">Name</label>
+					<input
+						type="text"
+						name="name"
+						placeholder="Alexei Ward"
+						value={billingDetails.name}
+						onChange={handleInputChange}
+						className="checkinput"
+						required
+					/>
 					<div className="flex justify-between items-center ">
-						<label>Email Address</label>
+						<label className="link3">Email Address</label>
 						{emailError && (
 							<p className="text-dark-red text-[0.75rem]">
 								{emailError}
@@ -77,120 +79,137 @@ export default function Checkout() {
 						placeholder="alexei@mail.com"
 						value={billingDetails.email}
 						onChange={handleInputChange}
-						className={emailError ? 'input-error' : ''}
+						className={`checkinput ${emailError ? 'input-error' : ''}`}
 						required
 					/>
-					<label>
-						Phone Number
-						<input
-							type="tel"
-							name="phone"
-							placeholder="+1 202-555-0136"
-							value={billingDetails.phone}
-							onChange={handleInputChange}
-							required
-						/>
-					</label>
+					<label className="link3">Phone Number</label>
+					<input
+						type="tel"
+						name="phone"
+						placeholder="+1 202-555-0136"
+						value={billingDetails.phone}
+						onChange={handleInputChange}
+						className="checkinput"
+						required
+					/>
 				</section>
 				<section className="shipping-info">
-					<h3>Shipping Info</h3>
-					<label>
-						Address
-						<input
-							type="text"
-							name="address"
-							placeholder="1137 Williams Avenue"
-							value={shippingInfo.address}
-							onChange={handleInputChange}
-							required
-						/>
-					</label>
-					<label>
-						ZIP Code
-						<input
-							type="text"
-							name="zipCode"
-							placeholder="10001"
-							value={shippingInfo.zipCode}
-							onChange={handleInputChange}
-							required
-						/>
-					</label>
-					<label>
-						City
-						<input
-							type="text"
-							name="city"
-							placeholder="New York"
-							value={shippingInfo.city}
-							onChange={handleInputChange}
-							required
-						/>
-					</label>
-					<label>
-						Country
-						<input
-							type="text"
-							name="country"
-							placeholder="United States"
-							value={shippingInfo.country}
-							onChange={handleInputChange}
-							required
-						/>
-					</label>
+					<h3 className="link4">Shipping Info</h3>
+					<label className="link3">Address</label>
+					<input
+						type="text"
+						name="address"
+						placeholder="1137 Williams Avenue"
+						value={shippingInfo.address}
+						onChange={handleInputChange}
+						className="checkinput"
+						required
+					/>
+					<label className="link3">ZIP Code</label>
+					<input
+						type="text"
+						name="zipCode"
+						placeholder="10001"
+						value={shippingInfo.zipCode}
+						onChange={handleInputChange}
+						className="checkinput"
+						required
+					/>
+					<label className="link3">City</label>
+					<input
+						type="text"
+						name="city"
+						placeholder="New York"
+						value={shippingInfo.city}
+						onChange={handleInputChange}
+						className="checkinput"
+						required
+					/>
+					<label className="link3">Country</label>
+					<input
+						type="text"
+						name="country"
+						placeholder="United States"
+						value={shippingInfo.country}
+						onChange={handleInputChange}
+						className="checkinput"
+						required
+					/>
 				</section>
 				<section className="payment-details">
-					<h3>Payment Details</h3>
-					<label>
-						Payment Method
-						<div>
-							<label>
-								<input
-									type="radio"
-									name="paymentMethod"
-									value="eMoney"
-									checked={paymentMethod === 'eMoney'}
-									onChange={handlePaymentChange}
-								/>
-								e-Money
-							</label>
-							<label>
-								<input
-									type="radio"
-									name="paymentMethod"
-									value="cashOnDelivery"
-									checked={paymentMethod === 'cashOnDelivery'}
-									onChange={handlePaymentChange}
-								/>
-								Cash on Delivery
-							</label>
-						</div>
-					</label>
+					<h3 className="link4">Payment Details</h3>
+					<p className="link3 mt-6">Payment Method</p>
+					<div className="flex flex-col gap-4 mt-4">
+						<label
+							className={`payment ${paymentMethod === 'e-Money' ? 'selected' : ''}`}
+						>
+							<input
+								type="radio"
+								name="paymentMethod"
+								value="e-Money"
+								checked={paymentMethod === 'e-Money'}
+								onChange={handlePaymentChange}
+							/>
+							e-Money
+						</label>
+						<label
+							className={`payment ${paymentMethod === 'Cash on Delivery' ? 'selected' : ''}`}
+						>
+							<input
+								type="radio"
+								name="paymentMethod"
+								value="Cash on Delivery"
+								checked={paymentMethod === 'Cash on Delivery'}
+								onChange={handlePaymentChange}
+							/>
+							Cash on Delivery
+						</label>
+						<label className="link3">e-Money Number</label>
+						<input
+							type="text"
+							name="e-Money Number"
+							placeholder="238521993"
+							value={shippingInfo.country}
+							onChange={handleInputChange}
+							className="paymentinput"
+							required
+						/>
+						<label className="link3">e-Money PIN</label>
+						<input
+							type="text"
+							name="e-Money PIN"
+							placeholder="6891"
+							value={shippingInfo.country}
+							onChange={handleInputChange}
+							className="paymentinput"
+							required
+						/>
+					</div>
 				</section>
-				<button type="submit">CONTINUE</button>
 			</form>
-			<div className="summary">
-				<h3>SUMMARY</h3>
-				<div className="summary-items"></div>
-				<div className="summary-totals">
+			<div className="p-5 bg-white rounded-lg min-w-[21rem] max-h-[38.25rem]">
+				<h3 className="text-h6 tracking-[0.08038rem] mb-6">
+					SUMMARY
+				</h3>
+				<div className="mb-5">
 					<div className="total-line">
-						<p>Total</p>
-						<p>$5,396</p>
+						<p className="totalpay">Total</p>
+						<p className="text-h6">$0</p>
 					</div>
 					<div className="total-line">
-						<p>Shipping</p>
-						<p>$50</p>
+						<p className="totalpay">Shipping</p>
+						<p className="text-h6">$50</p>
 					</div>
 					<div className="total-line">
-						<p>VAT (Included)</p>
-						<p>$1,079</p>
+						<p className="totalpay">VAT (Included)</p>
+						<p className="text-h6">$0</p>
 					</div>
-					<div className="total-line grand-total">
-						<p>GRAND TOTAL</p>
-						<p>$5,446</p>
+					<div className="total-line font-bold mt-6">
+						<p className="totalpay">GRAND TOTAL</p>
+						<p className="text-h6 text-burnt-orange">$0</p>
 					</div>
 				</div>
-				<button className="continue-button">CONTINUE</button>
+				<Button className="w-full mt-4">CONTINUE & PAY</Button>
 			</div>
 		</div>
 	)

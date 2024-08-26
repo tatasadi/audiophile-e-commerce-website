@@ -70,88 +70,31 @@
 	.link2 {
 		@apply cursor-pointer text-[0.8125rem] hover:text-burnt-orange;
 	}
-
-	.checkout-page {
-		display: flex;
-		justify-content: space-between;
-		padding: 20px;
+	.link3 {
+		@apply block text-[.75rem] font-bold tracking-[-0.01338rem];
 	}
-
-	.checkout-form {
-		flex: 0.6;
-		display: flex;
-		flex-direction: column;
+	.link4 {
+		@apply text-[.8125rem] text-burnt-orange tracking-[0.05806rem] my-4;
 	}
-
-	.checkout-form h2 {
-		font-size: 24px;
-		margin-bottom: 20px;
+	.payment {
+		@apply flex border-2 border-gray-300 p-3 rounded-lg gap-4 hover:border-burnt-orange;
 	}
-
-	.checkout-form section {
-		margin-bottom: 20px;
+	.checkinput {
+		@apply max-w-[39.5rem] mt-2 mb-4 border-[0.0625rem] border-gray-300 p-[.35rem] rounded-md pl-3;
 	}
-
-	.checkout-form label {
-		display: block;
-		margin-bottom: 10px;
+	.paymentinput {
+		@apply max-w-[39.5rem] border-[0.0625rem] border-gray-300 p-[.35rem] rounded-md pl-3;
 	}
-
-	.checkout-form input {
-		width: 100%;
-		padding: 10px;
-		margin-top: 5px;
-		margin-bottom: 15px;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-	}
-
-	.payment-details div {
-		display: flex;
-		gap: 10px;
-	}
-
-	.summary {
-		flex: 0.35;
-		padding: 20px;
-		background-color: #f9f9f9;
-		border-radius: 10px;
-	}
-
-	.summary h3 {
-		font-size: 18px;
-		margin-bottom: 20px;
-	}
-
-	.summary-items {
-		margin-bottom: 20px;
-	}
-
-	.summary-totals {
-		margin-bottom: 20px;
-	}
-
 	.total-line {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 10px;
+		@apply flex justify-between mb-2;
 	}
-
-	.grand-total {
-		font-weight: bold;
+	.totalpay {
+		@apply text-body-m opacity-50 uppercase;
 	}
-
-	.continue-button {
-		width: 100%;
-		padding: 10px;
-		background-color: orange;
-		color: white;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		text-align: center;
+	input::placeholder {
+		font-size: 13px;
 	}
-	.input-error {
-		border: 2px solid red;
+	input[type='radio'] {
+		accent-color: #d87d4a;
 	}
 }
