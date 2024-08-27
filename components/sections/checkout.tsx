@@ -48,12 +48,15 @@ export default function Checkout() {
 		e.preventDefault()
 	}
 	return (
-		<div className="lg:flex lg:justify-between p-5">
-			<form className="flex flex-col" onSubmit={handleSubmit}>
+		<div className="lg:flex lg:justify-between p-8">
+			<form
+				className="flex flex-col bg-white p-6"
+				onSubmit={handleSubmit}
+			>
 				<h2 className="text-h4 tracking-[0.0625rem] my-6">
 					CHECKOUT
 				</h2>
-				<section className="billing-details">
+				<section>
 					<h3 className="link4">Billing Details</h3>
 					<label className="link3">Name</label>
 					<input
@@ -65,7 +68,7 @@ export default function Checkout() {
 						className="checkinput"
 						required
 					/>
-					<div className="flex justify-between items-center ">
+					<div className="flex justify-between items-center">
 						<label className="link3">Email Address</label>
 						{emailError && (
 							<p className="text-dark-red text-[0.75rem]">
@@ -93,7 +96,7 @@ export default function Checkout() {
 						required
 					/>
 				</section>
-				<section className="shipping-info">
+				<section>
 					<h3 className="link4">Shipping Info</h3>
 					<label className="link3">Address</label>
 					<input
@@ -136,12 +139,12 @@ export default function Checkout() {
 						required
 					/>
 				</section>
-				<section className="payment-details">
+				<section>
 					<h3 className="link4">Payment Details</h3>
 					<p className="link3 mt-6">Payment Method</p>
 					<div className="flex flex-col gap-4 mt-4">
 						<label
-							className={`payment ${paymentMethod === 'e-Money' ? 'selected' : ''}`}
+							className={`payment link5 ${paymentMethod === 'e-Money' ? 'selected' : ''}`}
 						>
 							<input
 								type="radio"
@@ -153,7 +156,7 @@ export default function Checkout() {
 							e-Money
 						</label>
 						<label
-							className={`payment ${paymentMethod === 'Cash on Delivery' ? 'selected' : ''}`}
+							className={`payment link5 ${paymentMethod === 'Cash on Delivery' ? 'selected' : ''}`}
 						>
 							<input
 								type="radio"
@@ -193,19 +196,19 @@ export default function Checkout() {
 				</h3>
 				<div className="mb-5">
 					<div className="total-line">
-						<p className="totalpay">Total</p>
+						<p className="total-pay">Total</p>
 						<p className="text-h6">$0</p>
 					</div>
 					<div className="total-line">
-						<p className="totalpay">Shipping</p>
+						<p className="total-pay">Shipping</p>
 						<p className="text-h6">$50</p>
 					</div>
 					<div className="total-line">
-						<p className="totalpay">VAT (Included)</p>
+						<p className="total-pay">VAT (Included)</p>
 						<p className="text-h6">$0</p>
 					</div>
 					<div className="total-line font-bold mt-6">
-						<p className="totalpay">GRAND TOTAL</p>
+						<p className="total-pay">GRAND TOTAL</p>
 						<p className="text-h6 text-burnt-orange">$0</p>
 					</div>
 				</div>

@@ -76,19 +76,22 @@
 	.link4 {
 		@apply text-[.8125rem] text-burnt-orange tracking-[0.05806rem] my-4;
 	}
+	.link5 {
+		@apply text-[.875rem] font-bold tracking-[-0.01563rem];
+	}
 	.payment {
-		@apply flex border-2 border-gray-300 p-3 rounded-lg gap-4 hover:border-burnt-orange;
+		@apply flex min-w-[17.5rem] border-2 border-gray-200 p-2 pl-3 rounded-md gap-4 hover:border-burnt-orange;
 	}
 	.checkinput {
-		@apply max-w-[39.5rem] mt-2 mb-4 border-[0.0625rem] border-gray-300 p-[.35rem] rounded-md pl-3;
+		@apply min-w-[17.5rem] mt-2 mb-4 border-[0.0625rem] border-gray-300 p-[.35rem] rounded-md pl-3;
 	}
 	.paymentinput {
-		@apply max-w-[39.5rem] border-[0.0625rem] border-gray-300 p-[.35rem] rounded-md pl-3;
+		@apply border-[0.0625rem] border-gray-300 p-[.35rem] rounded-md pl-3;
 	}
 	.total-line {
 		@apply flex justify-between mb-2;
 	}
-	.totalpay {
+	.total-pay {
 		@apply text-body-m opacity-50 uppercase;
 	}
 	input::placeholder {

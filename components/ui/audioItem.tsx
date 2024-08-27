@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils'
 import { Button } from './button'
 
 export default function AudioItem({
-	icon,
+	image,
 	title,
 	text,
 	isNewProduct = false,
@@ -15,8 +15,8 @@ export default function AudioItem({
 				className,
 			)}
 		>
-			<div className="flex justify-center items-center w-[20.4375rem] h-[22rem] md:w-[43.0625rem] lg:w-[33.75rem] lg:h-[20.4375rem] bg-very-light-gray rounded-lg">
-				<img src={icon} alt="audio" />
+			<div className="flex justify-center items-center w-[20.4375rem] h-[22rem] md:w-[43.0625rem] lg:w-[33.75rem] lg:h-[35rem] bg-very-light-gray rounded-lg">
+				{image}
 			</div>
 			<div className="p-2 flex flex-col justify-center items-center lg:items-start lg:w-1/2 gap-4 md:gap-10">
 				{isNewProduct && (
