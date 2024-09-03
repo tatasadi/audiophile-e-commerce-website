@@ -119,7 +119,7 @@ export default function Cart() {
 							>
 								-
 							</button>
-							<span className="text-[.8125rem] font-bold uppercase">
+							<span className="text-[.8125rem] font-bold uppercase min-w-2">
 								{item.quantity}
 							</span>
 							<button

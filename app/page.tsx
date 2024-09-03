@@ -15,6 +15,7 @@ import FeaturesX99II from '@/components/sections/featuresX99II'
 import ImagesYx1 from '@/components/sections/imagesYx1'
 import Cart from '@/components/ui/cart'
 import Checkout from '@/components/sections/checkout'
+import { Input } from '@/components/ui/input'
 export default function Home() {
 	return (
 		<main className="max-w-[90rem] mx-auto p-6">
@@ -34,6 +35,7 @@ export default function Home() {
 			<ImagesYx1 />
 			<Cart />
 			<Checkout />
+			<Input />
 		</main>
 	)
 }

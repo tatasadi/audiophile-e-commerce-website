@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { Button } from '../ui/button'
+import { Input } from '../ui/input'
 
 export default function Checkout() {
 	const [billingDetails, setBillingDetails] = useState({
@@ -59,7 +60,7 @@ export default function Checkout() {
 				<section>
 					<h3 className="link4">Billing Details</h3>
 					<label className="link3">Name</label>
-					<input
+					<Input
 						type="text"
 						name="name"
 						placeholder="Alexei Ward"
@@ -76,7 +77,7 @@ export default function Checkout() {
 							</p>
 						)}
 					</div>
-					<input
+					<Input
 						type="email"
 						name="email"
 						placeholder="alexei@mail.com"
@@ -86,7 +87,7 @@ export default function Checkout() {
 						required
 					/>
 					<label className="link3">Phone Number</label>
-					<input
+					<Input
 						type="tel"
 						name="phone"
 						placeholder="+1 202-555-0136"
@@ -99,7 +100,7 @@ export default function Checkout() {
 				<section>
 					<h3 className="link4">Shipping Info</h3>
 					<label className="link3">Address</label>
-					<input
+					<Input
 						type="text"
 						name="address"
 						placeholder="1137 Williams Avenue"
@@ -109,7 +110,7 @@ export default function Checkout() {
 						required
 					/>
 					<label className="link3">ZIP Code</label>
-					<input
+					<Input
 						type="text"
 						name="zipCode"
 						placeholder="10001"
@@ -119,7 +120,7 @@ export default function Checkout() {
 						required
 					/>
 					<label className="link3">City</label>
-					<input
+					<Input
 						type="text"
 						name="city"
 						placeholder="New York"
@@ -129,7 +130,7 @@ export default function Checkout() {
 						required
 					/>
 					<label className="link3">Country</label>
-					<input
+					<Input
 						type="text"
 						name="country"
 						placeholder="United States"
@@ -168,7 +169,7 @@ export default function Checkout() {
 							Cash on Delivery
 						</label>
 						<label className="link3">e-Money Number</label>
-						<input
+						<Input
 							type="text"
 							name="e-Money Number"
 							placeholder="238521993"
@@ -178,7 +179,7 @@ export default function Checkout() {
 							required
 						/>
 						<label className="link3">e-Money PIN</label>
-						<input
+						<Input
 							type="text"
 							name="e-Money PIN"
 							placeholder="6891"
