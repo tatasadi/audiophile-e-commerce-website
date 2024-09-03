@@ -8,13 +8,12 @@ export default function Checkout() {
 		name: '',
 		email: '',
 		phone: '',
-	})
-
-	const [shippingInfo, setShippingInfo] = useState({
 		address: '',
 		zipCode: '',
 		city: '',
 		country: '',
+		eMoney: '',
+		number: '',
 	})
 	const [emailError, setEmailError] = useState('')
 
@@ -104,7 +103,7 @@ export default function Checkout() {
 						type="text"
 						name="address"
 						placeholder="1137 Williams Avenue"
-						value={shippingInfo.address}
+						value={billingDetails.address}
 						onChange={handleInputChange}
 						className="checkinput"
 						required
@@ -114,7 +113,7 @@ export default function Checkout() {
 						type="text"
 						name="zipCode"
 						placeholder="10001"
-						value={shippingInfo.zipCode}
+						value={billingDetails.zipCode}
 						onChange={handleInputChange}
 						className="checkinput"
 						required
@@ -124,7 +123,7 @@ export default function Checkout() {
 						type="text"
 						name="city"
 						placeholder="New York"
-						value={shippingInfo.city}
+						value={billingDetails.city}
 						onChange={handleInputChange}
 						className="checkinput"
 						required
@@ -134,7 +133,7 @@ export default function Checkout() {
 						type="text"
 						name="country"
 						placeholder="United States"
-						value={shippingInfo.country}
+						value={billingDetails.country}
 						onChange={handleInputChange}
 						className="checkinput"
 						required
@@ -171,9 +170,9 @@ export default function Checkout() {
 						<label className="link3">e-Money Number</label>
 						<Input
 							type="text"
-							name="e-Money Number"
+							name="number"
 							placeholder="238521993"
-							value={shippingInfo.country}
+							value={billingDetails.number}
 							onChange={handleInputChange}
 							className="paymentinput"
 							required
@@ -181,9 +180,9 @@ export default function Checkout() {
 						<label className="link3">e-Money PIN</label>
 						<Input
 							type="text"
-							name="e-Money PIN"
+							name="eMoney"
 							placeholder="6891"
-							value={shippingInfo.country}
+							value={billingDetails.eMoney}
 							onChange={handleInputChange}
 							className="paymentinput"
 							required
