@@ -65,7 +65,6 @@ export default function Checkout() {
 						placeholder="Alexei Ward"
 						value={billingDetails.name}
 						onChange={handleInputChange}
-						className="checkinput"
 						required
 					/>
 					<div className="flex justify-between items-center">
@@ -82,7 +81,7 @@ export default function Checkout() {
 						placeholder="alexei@mail.com"
 						value={billingDetails.email}
 						onChange={handleInputChange}
-						className={`checkinput ${emailError ? 'input-error' : ''}`}
+						className={`${emailError ? 'input-error' : ''}`}
 						required
 					/>
 					<label className="link3">Phone Number</label>
@@ -92,7 +91,6 @@ export default function Checkout() {
 						placeholder="+1 202-555-0136"
 						value={billingDetails.phone}
 						onChange={handleInputChange}
-						className="checkinput"
 						required
 					/>
 				</section>
@@ -105,7 +103,6 @@ export default function Checkout() {
 						placeholder="1137 Williams Avenue"
 						value={billingDetails.address}
 						onChange={handleInputChange}
-						className="checkinput"
 						required
 					/>
 					<label className="link3">ZIP Code</label>
@@ -115,7 +112,6 @@ export default function Checkout() {
 						placeholder="10001"
 						value={billingDetails.zipCode}
 						onChange={handleInputChange}
-						className="checkinput"
 						required
 					/>
 					<label className="link3">City</label>
@@ -125,7 +121,6 @@ export default function Checkout() {
 						placeholder="New York"
 						value={billingDetails.city}
 						onChange={handleInputChange}
-						className="checkinput"
 						required
 					/>
 					<label className="link3">Country</label>
@@ -135,16 +130,15 @@ export default function Checkout() {
 						placeholder="United States"
 						value={billingDetails.country}
 						onChange={handleInputChange}
-						className="checkinput"
 						required
 					/>
 				</section>
 				<section>
 					<h3 className="link4">Payment Details</h3>
 					<p className="link3 mt-6">Payment Method</p>
-					<div className="flex flex-col gap-4 mt-4">
+					<div className="flex flex-col mt-4">
 						<label
-							className={`payment link5 ${paymentMethod === 'e-Money' ? 'selected' : ''}`}
+							className={`payment ${paymentMethod === 'e-Money' ? 'selected' : ''}`}
 						>
 							<input
 								type="radio"
@@ -156,7 +150,7 @@ export default function Checkout() {
 							e-Money
 						</label>
 						<label
-							className={`payment link5 ${paymentMethod === 'Cash on Delivery' ? 'selected' : ''}`}
+							className={`payment ${paymentMethod === 'Cash on Delivery' ? 'selected' : ''}`}
 						>
 							<input
 								type="radio"
@@ -167,14 +161,13 @@ export default function Checkout() {
 							/>
 							Cash on Delivery
 						</label>
-						<label className="link3">e-Money Number</label>
+						<label className="link3 mt-6">e-Money Number</label>
 						<Input
 							type="text"
 							name="number"
 							placeholder="238521993"
 							value={billingDetails.number}
 							onChange={handleInputChange}
-							className="paymentinput"
 							required
 						/>
 						<label className="link3">e-Money PIN</label>
@@ -184,7 +177,6 @@ export default function Checkout() {
 							placeholder="6891"
 							value={billingDetails.eMoney}
 							onChange={handleInputChange}
-							className="paymentinput"
 							required
 						/>
 					</div>

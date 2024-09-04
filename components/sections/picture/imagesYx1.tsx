@@ -1,4 +1,4 @@
-import ImageItem from '../ui/imageItem'
+import ImageItem from '@/components/ui/imageItem'
 
 export default function ImagesYx1() {
 	return (

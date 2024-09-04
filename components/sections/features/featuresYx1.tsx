@@ -1,4 +1,4 @@
-import Features from '../ui/features'
+import Features from '@/components/ui/features'
 
 export default function FeaturesYx1() {
 	return (

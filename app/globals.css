@@ -76,17 +76,8 @@
 	.link4 {
 		@apply text-[.8125rem] text-burnt-orange tracking-[0.05806rem] my-4;
 	}
-	.link5 {
-		@apply text-[.875rem] font-bold tracking-[-0.01563rem];
-	}
 	.payment {
-		@apply flex min-w-[17.5rem] border-2 border-gray-200 p-2 pl-3 rounded-md gap-4 hover:border-burnt-orange;
-	}
-	.checkinput {
-		@apply min-w-[17.5rem] mt-2 mb-4 border-[0.0625rem] border-gray-300 p-[.35rem] rounded-md pl-3;
-	}
-	.paymentinput {
-		@apply border-[0.0625rem] border-gray-300 p-[.35rem] rounded-md pl-3;
+		@apply flex min-w-[17.5rem] text-[.875rem] font-bold tracking-[-0.01563rem] my-2 border-2 border-gray-200 p-2 pl-3 rounded-md gap-4 hover:border-burnt-orange;
 	}
 	.total-line {
 		@apply flex justify-between mb-2;

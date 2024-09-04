@@ -10,9 +10,9 @@ import Footer from '@/components/sections/footer'
 import Headphones from '@/components/sections/headphones'
 import Speakers from '@/components/sections/speakers'
 import Earphones from '@/components/sections/earphones'
-import InTheBoxX99II from '@/components/sections/inTheBoxX99II'
-import FeaturesX99II from '@/components/sections/featuresX99II'
-import ImagesYx1 from '@/components/sections/imagesYx1'
+import InTheBoxX59 from '@/components/sections/inTheBox/inTheBoxX59'
+import FeaturesX99II from '@/components/sections/features/featuresX99II'
+import ImagesYx1 from '@/components/sections/picture/imagesYx1'
 import Cart from '@/components/ui/cart'
 import Checkout from '@/components/sections/checkout'
 import { Input } from '@/components/ui/input'
@@ -30,7 +30,7 @@ export default function Home() {
 			<Headphones />
 			<Speakers />
 			<Earphones />
-			<InTheBoxX99II />
+			<InTheBoxX59 />
 			<FeaturesX99II />
 			<ImagesYx1 />
 			<Cart />
