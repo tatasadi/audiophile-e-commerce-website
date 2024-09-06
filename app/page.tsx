@@ -18,7 +18,7 @@ import Checkout from '@/components/sections/checkout'
 import { Input } from '@/components/ui/input'
 export default function Home() {
 	return (
-		<main className="max-w-[90rem] mx-auto p-6">
+		<main className="max-w-[90rem] mx-auto">
 			<Header />
 			<Hero />
 			<AudioDeviceControl />
