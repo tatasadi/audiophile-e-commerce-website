@@ -11,7 +11,7 @@ export default function AudioItem({
 	return (
 		<div
 			className={cn(
-				`flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2`,
+				`flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2 lg:px-[10rem] py-16`,
 				className,
 			)}
 		>
