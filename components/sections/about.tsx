@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 export default function About() {
 	return (
-		<div className=" grid grid-cols-1 lg:grid-cols-2 p-2 gap-6">
+		<div className=" grid grid-cols-1 lg:grid-cols-2 p-6 gap-6 ">
 			<div className="lg:col-start-2">
 				<picture>
 					<source

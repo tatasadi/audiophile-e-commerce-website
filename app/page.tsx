@@ -18,24 +18,12 @@ import Checkout from '@/components/sections/checkout'
 import { Input } from '@/components/ui/input'
 export default function Home() {
 	return (
-		<main className="max-w-[90rem] mx-auto">
-			<Header />
+		<>
 			<Hero />
 			<AudioDeviceControl />
 			<Product />
 			<ItemProduct />
 			<SleekProduct />
-			<About />
-			<Footer />
-			<Headphones />
-			<Speakers />
-			<Earphones />
-			<InTheBoxX59 />
-			<FeaturesX99II />
-			<ImagesYx1 />
-			<Cart />
-			<Checkout />
-			<Input />
-		</main>
+		</>
 	)
 }

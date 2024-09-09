@@ -2,7 +2,7 @@ import DeviceControl from '../ui/deviceControl'
 
 export default function AudioDeviceControl() {
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-3 mt-48 sm:mt-80 md:mt-60 lg:mt-32 mb-20">
+		<div className="grid grid-cols-1 md:grid-cols-3 py-8 mx-2">
 			<DeviceControl
 				text="HEADPHONES"
 				icon="/cart/image12.png"

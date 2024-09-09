@@ -4,7 +4,7 @@ import { useState } from 'react'
 export default function Header() {
 	const [mobileOpen, setMobileOpen] = useState(false)
 	return (
-		<header className="relative flex w-full items-center bg-dark p-8">
+		<header className="relative flex w-full items-center bg-dark p-8 pb-12">
 			{mobileOpen && (
 				<div className="fixed inset-0 z-10 bg-black opacity-50 lg:hidden"></div>
 			)}
@@ -29,7 +29,7 @@ export default function Header() {
 					/>
 				)}
 			</div>
-			<div className="mr-auto z-30">
+			<div className=" z-30 mr-auto md:ml-8 md:w-full">
 				<img
 					src="/audiophile.svg"
 					alt="logo"
@@ -41,7 +41,7 @@ export default function Header() {
 					mobileOpen ? 'block' : 'hidden lg:block'
 				}`}
 			>
-				<ul className="flex flex-col items-center gap-6 lg:flex-row leading-6 md:gap-10">
+				<ul className="flex flex-col items-center gap-6 lg:flex-row leading-6 md:gap-10 lg:mr-16">
 					<li>
 						<a className="link" href="#">
 							HOME
@@ -68,7 +68,7 @@ export default function Header() {
 				<img
 					src="/shape.svg"
 					alt="logo"
-					className="w-[1.4375rem] md:h-[2.5rem]"
+					className="min-w-[1.4375rem] lg:h-[2.5rem]"
 				/>
 			</div>
 		</header>

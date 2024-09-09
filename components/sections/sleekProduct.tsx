@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 export default function SleekProduct() {
 	return (
-		<div className=" grid grid-cols-1 md:grid-cols-2 p-6 sm:p-24 lg:p-6 gap-6">
+		<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-6 pt-4 sm:pt-12 lg:pt-4">
 			<picture>
 				<source
 					media="(min-width: 1024px)"
@@ -19,7 +19,7 @@ export default function SleekProduct() {
 				<img
 					src="/home/mobile/image-earphones-yx1.jpg"
 					alt="earphones"
-					className="rounded-lg"
+					className="rounded-lg w-full h-full object-cover"
 				/>
 			</picture>
 			<div className="p-[5rem] flex flex-col justify-center items-start gap-8 bg-very-light-gray rounded-lg">
