@@ -2,6 +2,7 @@ import FeaturesX99II from '@/components/sections/features/featuresX99II'
 import InTheBoxX99II from '@/components/sections/inTheBox/inTheBoxX99II'
 import ImagesX99II from '@/components/sections/picture/imagesX99II'
 import ProductDetail from '@/components/sections/productDetail'
+import ProductControl from '@/components/ui/productControl'
 
 export default function ProductDetailXX99II() {
 	return (
@@ -36,6 +37,23 @@ export default function ProductDetailXX99II() {
 				<InTheBoxX99II />
 			</div>
 			<ImagesX99II />
+			<div className="grid grid-cols-1 md:grid-cols-3 py-8 mx-2 lg:mx-[5rem]">
+				<ProductControl
+					text="XX99 MARK I"
+					icon="/cart/image12.png"
+					imageClassName="w-[4.99475rem]"
+				/>
+				<ProductControl
+					text="XX99 MARK I"
+					icon="/cart/image12.png"
+					imageClassName="w-[4.99475rem]"
+				/>
+				<ProductControl
+					text="XX99 MARK I"
+					icon="/cart/image12.png"
+					imageClassName="w-[4.99475rem]"
+				/>
+			</div>
 		</div>
 	)
 }
