@@ -21,7 +21,7 @@ export default function ImagesZx9() {
 						<img
 							src="/product-zx9-speaker/mobile/image-gallery-1.jpg"
 							alt="Responsive"
-							className="rounded-lg"
+							className="w-full h-full object-cover rounded-lg"
 						/>
 					</picture>
 				}
@@ -42,7 +42,7 @@ export default function ImagesZx9() {
 						<img
 							src="/product-zx9-speaker/mobile/image-gallery-2.jpg"
 							alt="Responsive"
-							className="rounded-lg"
+							className="w-full h-full object-cover rounded-lg"
 						/>
 					</picture>
 				}
@@ -63,7 +63,7 @@ export default function ImagesZx9() {
 						<img
 							src="/product-zx9-speaker/mobile/image-gallery-3.jpg"
 							alt="Responsive"
-							className="md:min-h-[33rem] lg:min-h-[36rem] rounded-lg"
+							className="w-full h-full object-cover rounded-lg"
 						/>
 					</picture>
 				}
