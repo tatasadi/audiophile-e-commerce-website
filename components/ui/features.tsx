@@ -1,6 +1,6 @@
 export default function Features({ text, text2 }) {
 	return (
-		<div className="">
+		<div className="lg:w-3/4">
 			<h2 className="uppercase text-h5 mb-8 tracking-[0.05356rem]">
 				FEATURES
 			</h2>

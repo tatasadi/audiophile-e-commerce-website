@@ -2,11 +2,11 @@ import InTheBoxItem from './inTheBoxItem'
 
 export default function InTheBoxContainer({ children }) {
 	return (
-		<div className="pt-6">
+		<div className="pt-6 md:grid md:grid-cols-2 lg:grid-cols-1 w-full">
 			<h2 className="uppercase text-h5 mb-8 tracking-[0.05356rem]">
 				in the box
 			</h2>
-			{children}
+			<div className="lg:mt-[-7rem]">{children}</div>
 		</div>
 	)
 }

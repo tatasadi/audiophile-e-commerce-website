@@ -5,7 +5,7 @@ import ProductDetail from '@/components/sections/productDetail'
 
 export default function ProductDetailXX99II() {
 	return (
-		<>
+		<div className="p-12">
 			<ProductDetail
 				image={
 					<picture>
@@ -31,9 +31,11 @@ export default function ProductDetailXX99II() {
 				text="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
 				price="$ 2,999"
 			/>
-			<FeaturesX99II />
-			<InTheBoxX99II />
+			<div className="lg:flex">
+				<FeaturesX99II />
+				<InTheBoxX99II />
+			</div>
 			<ImagesX99II />
-		</>
+		</div>
 	)
 }
