@@ -26,6 +26,7 @@ export default function Speakers() {
 				}
 				title="ZX9 speaker"
 				text="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
+				isNewProduct={true}
 			/>
 			<AudioItem
 				image={

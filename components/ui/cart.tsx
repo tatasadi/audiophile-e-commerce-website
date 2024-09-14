@@ -1,6 +1,6 @@
 'use client'
+import { Button } from '@/components/ui/button'
 import React, { useState } from 'react'
-import { Button } from './button'
 
 export default function Cart() {
 	const initialItems = [
@@ -79,64 +79,67 @@ export default function Cart() {
 		0,
 	)
 	return (
-		<div className="bg-white p-6 rounded-lg max-w-[23.5625rem]">
-			<div className="flex justify-between items-center mb-8">
-				<h3 className="text-h6 tracking-[0.08038rem]">
-					Cart ({items.length})
-				</h3>
-				<button
-					className="remove-all hover:text-burnt-orange text-body-m leading-[1.5625rem]"
-					onClick={removeAll}
-				>
-					Remove all
-				</button>
-			</div>
-			<div className="mb-4">
-				{items.map(item => (
-					<div
-						key={item.id}
-						className="flex justify-between items-center mb-4"
+		<div className="relative flex flex-col justify-center items-center ">
+			<div className="fixed inset-0 bg-black opacity-50"></div>
+			<div className="relative bg-white p-6 rounded-lg min-w-[23.5625rem] z-10 mt-6 md:ml-auto md:mr-9 lg:mr-40">
+				<div className="flex justify-between items-center mb-8">
+					<h3 className="text-h6 tracking-[0.08038rem]">
+						Cart ({items.length})
+					</h3>
+					<button
+						className="remove-all hover:text-burnt-orange text-body-m leading-[1.5625rem]"
+						onClick={removeAll}
 					>
-						<div className="flex items-center gap-6">
-							<div className="w-16 h-16 bg-very-light-gray flex justify-center items-center rounded-lg">
-								<img
-									src={item.image}
-									alt={item.name}
-									className="w-10 h-10 rounded-lg"
-								/>
+						Remove all
+					</button>
+				</div>
+				<div className="mb-4">
+					{items.map(item => (
+						<div
+							key={item.id}
+							className="flex justify-between items-center mb-4"
+						>
+							<div className="flex items-center gap-6">
+								<div className="w-16 h-16 bg-very-light-gray flex justify-center items-center rounded-lg">
+									<img
+										src={item.image}
+										alt={item.name}
+										className="w-10 h-10 rounded-lg"
+									/>
+								</div>
+								<div className="">
+									<p className="text-body-m font-bold">{item.name}</p>
+									<p className="text-[.875rem] opacity-50">
+										${item.price}
+									</p>
+								</div>
 							</div>
-							<div className="">
-								<p className="text-body-m font-bold">{item.name}</p>
-								<p className="text-[.875rem] opacity-50">
-									${item.price}
-								</p>
+							<div className="flex gap-5 justify-center items-center bg-very-light-gray py-1 px-3">
+								<button
+									className="opacity-25 w-4 hover:text-burnt-orange hover:opacity-95"
+									onClick={() => decrementQuantity(item.id)}
+								>
+									-
+								</button>
+								<span className="text-[.8125rem] font-bold uppercase min-w-2">
+									{item.quantity}
+								</span>
+								<button
+									className="opacity-25 w-4 hover:text-burnt-orange hover:opacity-95"
+									onClick={() => incrementQuantity(item.id)}
+								>
+									+
+								</button>
 							</div>
 						</div>
-						<div className="flex gap-5 justify-center items-center bg-very-light-gray py-1 px-3">
-							<button
-								className="opacity-25 w-4 hover:text-burnt-orange hover:opacity-95"
-								onClick={() => decrementQuantity(item.id)}
-							>
-								-
-							</button>
-							<span className="text-[.8125rem] font-bold uppercase min-w-2">
-								{item.quantity}
-							</span>
-							<button
-								className="opacity-25 w-4 hover:text-burnt-orange hover:opacity-95"
-								onClick={() => incrementQuantity(item.id)}
-							>
-								+
-							</button>
-						</div>
-					</div>
-				))}
+					))}
+				</div>
+				<div className="flex justify-between my-8">
+					<p className="text-body-m opacity-50 uppercase">Total</p>
+					<p className="text-h6">${total.toLocaleString()}</p>
+				</div>
+				<Button className="w-full">Checkout</Button>
 			</div>
-			<div className="flex justify-between my-8">
-				<p className="text-body-m opacity-50 uppercase">Total</p>
-				<p className="text-h6">${total.toLocaleString()}</p>
-			</div>
-			<Button className="w-full">Checkout</Button>
 		</div>
 	)
 }

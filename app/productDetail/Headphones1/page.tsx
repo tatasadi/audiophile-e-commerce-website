@@ -32,6 +32,7 @@ export default function ProductDetailXX99II() {
 				title="XX99 Mark II Headphones"
 				text="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
 				price="$ 2,999"
+				isNewProduct={true}
 			/>
 			<div className="lg:flex">
 				<FeaturesX99II />
