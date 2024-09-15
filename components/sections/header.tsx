@@ -37,7 +37,7 @@ export default function Header() {
 				/>
 			</div>
 			<nav
-				className={`fixed left-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white lg:bg-dark lg:text-white lg:relative lg:pt-0 lg:w-auto lg:mr-20 text-gray ${
+				className={`fixed left-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white lg:bg-black lg:text-white lg:relative lg:pt-0 lg:w-auto lg:mr-20 text-gray ${
 					mobileOpen ? 'block' : 'hidden lg:block'
 				}`}
 			>
