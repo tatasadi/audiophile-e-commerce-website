@@ -16,6 +16,7 @@ import ImagesYx1 from '@/components/sections/picture/imagesYx1'
 import Cart from '@/components/ui/cart'
 import Checkout from '@/components/sections/checkout'
 import { Input } from '@/components/ui/input'
+import CheckoutModal from '@/components/ui/checkoutModal'
 export default function Home() {
 	return (
 		<>
@@ -24,6 +25,7 @@ export default function Home() {
 			<Product />
 			<ItemProduct />
 			<SleekProduct />
+			<CheckoutModal />
 		</>
 	)
 }
