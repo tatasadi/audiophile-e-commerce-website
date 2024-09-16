@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Header() {
@@ -6,7 +7,7 @@ export default function Header() {
 	return (
 		<header className="relative flex w-full items-center bg-dark p-8 pb-12">
 			{mobileOpen && (
-				<div className="fixed inset-0 z-10 bg-black opacity-50 lg:hidden"></div>
+				<div className="fixed inset-0 z-10 bg-dark opacity-50 lg:hidden"></div>
 			)}
 
 			<div
@@ -37,30 +38,30 @@ export default function Header() {
 				/>
 			</div>
 			<nav
-				className={`fixed left-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white lg:bg-black lg:text-white lg:relative lg:pt-0 lg:w-auto lg:mr-20 text-gray ${
+				className={`fixed left-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white lg:bg-dark lg:text-white lg:relative lg:pt-0 lg:w-auto lg:mr-20 text-gray ${
 					mobileOpen ? 'block' : 'hidden lg:block'
 				}`}
 			>
 				<ul className="flex flex-col items-center gap-6 lg:flex-row leading-6 md:gap-10 lg:mr-16">
 					<li>
-						<a className="link" href="#">
+						<Link className="link" href="/">
 							HOME
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a className="link" href="#">
+						<Link className="link" href="/headphones">
 							HEADPHONES
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a className="link" href="#">
+						<Link className="link" href="/speakers">
 							SPEAKERS
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a className="link" href="#">
+						<Link className="link" href="/earphones">
 							EARPHONES
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>

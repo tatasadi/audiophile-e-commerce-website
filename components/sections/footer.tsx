@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { BiLogoFacebookSquare } from 'react-icons/bi'
 import { FaTwitter } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
@@ -14,24 +15,24 @@ export default function Footer() {
 				<nav>
 					<ul className="flex flex-col md:flex-row items-center gap-6 lg:flex-row leading-6 md:gap-10 mt-4 lg:ml-14">
 						<li>
-							<a className="link2" href="#">
+							<Link className="link2" href="/">
 								HOME
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a className="link2" href="#">
+							<Link className="link2" href="/headphones">
 								HEADPHONES
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a className="link2" href="#">
+							<Link className="link2" href="/speakers">
 								SPEAKERS
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a className="link2" href="#">
+							<Link className="link2" href="/earphones">
 								EARPHONES
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</nav>
