@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 export default function SleekProduct() {
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-6 pt-4 sm:pt-12 lg:pt-4">
+		<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-6 pt-6 lg:px-40">
 			<picture>
 				<source
 					media="(min-width: 1024px)"

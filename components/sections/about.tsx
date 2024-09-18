@@ -2,7 +2,7 @@ import { Button } from '../ui/button'
 
 export default function About() {
 	return (
-		<div className=" grid grid-cols-1 lg:grid-cols-2 p-6 gap-6 ">
+		<div className=" grid grid-cols-1 lg:grid-cols-2 p-6 gap-6 lg:px-40 lg:py-20">
 			<div className="lg:col-start-2">
 				<picture>
 					<source
@@ -20,11 +20,11 @@ export default function About() {
 					<img
 						src="/shared/mobile/image-best-gear.jpg"
 						alt="earphones"
-						className="rounded-lg"
+						className="rounded-lg w-full object-cover"
 					/>
 				</picture>
 			</div>
-			<div className="p-6 sm:p-16 lg:p-12 flex flex-col justify-center items-start gap-8 lg:col-start-1 lg:row-start-1">
+			<div className="p-6 flex flex-col justify-center items-start gap-8 lg:col-start-1 lg:row-start-1">
 				<h4 className="text-h4 md:text-h2 tracking-[0.08931rem] uppercase">
 					Bringing you the{' '}
 					<span className="text-burnt-orange">best</span> audio gear

@@ -39,7 +39,7 @@ export default function ProductDetailZX9() {
 				<InTheBoxZx9 />
 			</div>
 			<ImagesZx9 />
-			<div className="grid grid-cols-1 md:grid-cols-3 py-8 mx-2 lg:mx-[5rem]">
+			<div className="grid grid-cols-1 md:grid-cols-3 py-8 mx-2 lg:mx-8">
 				<ProductControl
 					text="ZX7 SPEAKER "
 					image={
